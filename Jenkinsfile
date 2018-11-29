@@ -21,7 +21,7 @@ node{
    
       stage('Publish Docker Image'){
          withCredentials([string(credentialsId: 'dockerpwd_sreejith1551', variable: 'dockerPWD_sreejith1551')]) {
-              sh "docker login -u sreejith1551 -p ${dockerPWD_sreejith1551}"
+              sh "docker login -u sreejith1551 -p ${Sree*1551}"
          }
         sh 'docker push sreejith1551/javademo:2.0.0'
       }
